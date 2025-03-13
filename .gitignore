@@ -1,1 +1,4 @@
 /.idea/
+/.idea/codeStyles/
+*.iml
+.idea_modules/
