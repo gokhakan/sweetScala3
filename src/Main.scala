@@ -28,5 +28,6 @@ object Main {
     val iterativeResult = calculateSweetsIterative(15)
     println(s"Final result (iterative): $iterativeResult sweets\n")
     println("end of Demo")
+    println("Another line")
   }
 }
