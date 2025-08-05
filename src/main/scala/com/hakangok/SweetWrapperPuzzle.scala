@@ -1,3 +1,5 @@
+package com.hakangok
+
 object SweetWrapperPuzzle:
 
   private def totalSweets(initialCoins: Int): Int =
