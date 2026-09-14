@@ -19,7 +19,7 @@ object SweetWrapperPuzzle:
     sweets
 
   @main def runPuzzle(): Unit =
-    val initialCoins = 15
+    val initialCoins = 30
     println(Console.GREEN + "initialCoins : " + initialCoins + Console.RESET)
     val result = totalSweets(initialCoins)
     println(s"Total sweets you can get: $result")

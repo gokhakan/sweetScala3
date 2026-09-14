@@ -7,4 +7,5 @@ object Sandbox {
   def runThis(): Unit =
     println(Console.RED + s"Name is: $name" + Console.RESET)
     println(Console.GREEN + name + Console.RESET)
+    println("Name is: " + name)
 }
