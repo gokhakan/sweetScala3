@@ -43,29 +43,29 @@ object FunctionalProgramming extends App{
   println("Prepend: " + "gok"::aList)
   println("Prepend and Append: " + {"hakan" +: aList :+ "gok"})
 
-  //sequences
+  //[2] Sequences
   val aSequence: Seq[Int] = Seq(1,2,3)
   println("Second val in " + aSequence + " is: " + aSequence(1))
 
-  //vectors are fast Seq
+  //[3] Vectors are fast Seq
   val aVector = Vector(6,7,8)
   println("vector: " + aVector + " has length " + aVector.length)
 
-  //sets = no duplicates
+  //[4] Sets = no duplicates
   val aSet = Set(1,2,3,4,1,2,3)
   println("set has 5 is: " + aSet.contains(5))
   println("remove 1 from set: " + (aSet -1))
   println("add to set: " + (aSet+99))
 
-  //range
+  //[5] Range
   val aRange = 1 to 5
   println("doubled range: " + aRange.map(x=>x*2).toList)
 
-  //tuples
+  //[6] Tuples
   val aTuple = ("hakan", "gok", 99)
   println("Head of tuple is: " + aTuple.head + " , last: " + aTuple.last)
 
-  //maps
+  //[7] Maps
   val aPhonebook:Map[String, Int] = Map(
     "hakan"->11,
     "gok"->22
