@@ -46,7 +46,4 @@ object Advanced extends App {
   def aMethodWithImplicitArgs(implicit arg: Int) = arg +1
   implicit val myImplicitInt: Int =46
   println(aMethodWithImplicitArgs)
-
-
-
 }
