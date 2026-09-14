@@ -34,4 +34,43 @@ object FunctionalProgramming extends App{
     letter<- letterList
   }yield s"$number+$letter"
   println("For comprehension result list: " + alternativePair)
+
+  //collections
+  //[1] List
+  val aList =List(1,2,3,4,5)
+  println("Head: " + aList.head)
+  println("Tail: " + aList.tail)
+  println("Prepend: " + "gok"::aList)
+  println("Prepend and Append: " + {"hakan" +: aList :+ "gok"})
+
+  //sequences
+  val aSequence: Seq[Int] = Seq(1,2,3)
+  println("Second val in " + aSequence + " is: " + aSequence(1))
+
+  //vectors are fast Seq
+  val aVector = Vector(6,7,8)
+  println("vector: " + aVector + " has length " + aVector.length)
+
+  //sets = no duplicates
+  val aSet = Set(1,2,3,4,1,2,3)
+  println("set has 5 is: " + aSet.contains(5))
+  println("remove 1 from set: " + (aSet -1))
+  println("add to set: " + (aSet+99))
+
+  //range
+  val aRange = 1 to 5
+  println("doubled range: " + aRange.map(x=>x*2).toList)
+
+  //tuples
+  val aTuple = ("hakan", "gok", 99)
+  println("Head of tuple is: " + aTuple.head + " , last: " + aTuple.last)
+
+  //maps
+  val aPhonebook:Map[String, Int] = Map(
+    "hakan"->11,
+    "gok"->22
+  )
+
+  println("Phone book: " + aPhonebook.head)
+
 }
