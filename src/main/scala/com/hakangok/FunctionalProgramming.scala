@@ -70,7 +70,6 @@ object FunctionalProgramming extends App{
     "hakan"->11,
     "gok"->22
   )
-
   println("Phone book: " + aPhonebook.head)
 
 }
